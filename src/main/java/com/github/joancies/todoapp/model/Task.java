@@ -1,7 +1,6 @@
 package com.github.joancies.todoapp.model;
 
 import jakarta.persistence.*;
-import jakarta.validation.*;
 import jakarta.validation.constraints.NotBlank;
 
 
@@ -11,7 +10,7 @@ public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @NotBlank(message="Task's description must be not null or empty")
+    @NotBlank( message ="Task's description must be not null or empty")
     private String description;
     private boolean done;
 
